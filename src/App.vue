@@ -60,7 +60,10 @@
   //   }
   // ];
   
-  const todos = ref([]);
+  let storedTodos;
+  localStorage.getItem("todos") ? storedTodos = JSON.parse(localStorage.getItem("todos")) : (storedTodos = []);
+  
+  const todos = ref(storedTodos);
   
   function addTodo() {
     
@@ -72,10 +75,16 @@
   
   function removeAllTodos() {
     todos.value.splice(0, todos.value.length);
+    updateStorage();
   }
   
   function completedTodo(todo) {
     todo.complete = !todo.complete;
+    updateStorage();
+  }
+  
+  function updateStorage() {
+    localStorage.setItem('todos', JSON.stringify(todos.value));
   }
 </script>
 
