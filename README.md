@@ -2,7 +2,7 @@
 
 A Todo App that you can list your activities and mark them as Complete or Incomplete. It remembers To-do's even after your PC shuts down.
 
-![App Showcase](/images/thumb01.png "App Showcase")
+![App Showcase](/images/todo_demo.gif "App Demo")
 
 ## Features
 - Self Explanatory User Interface (UI).
