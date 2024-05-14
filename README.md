@@ -2,6 +2,9 @@
 
 A Todo App that you can list your activities and mark them as Complete or Incomplete. It remembers To-do's even after your PC shuts down.
 
+Tutorial link: ![Medium article](https://medium.com/@sayansinha5/todo-app-using-vuejs-3-composition-api-and-tailwind-css-ee7c82854357)
+
+
 ![App Showcase](/images/todo_demo.gif "App Demo")
 
 ## Features
